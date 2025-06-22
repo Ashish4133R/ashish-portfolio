@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Gupta | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 2rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #00eaff;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid #00eaff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+      animation: fadeUp 0.8s ease both;
+    }
+    .section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+    }
+    .skills-grid div {
+      background: rgba(0, 234, 255, 0.1);
+      padding: 0.6rem;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .skills-grid div:hover {
+      background: rgba(0, 234, 255, 0.25);
+    }
+    .project {
+      margin-bottom: 1.2rem;
+    }
+    a {
+      color: #00eaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 1rem auto;
+      background-color: #00eaff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #00bcd4;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    input, textarea {
+      padding: 0.6rem;
+      border: none;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+    input[type="submit"] {
+      background-color: #00eaff;
+      color: #000;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    input[type="submit"]:hover {
+      background-color: #00bcd4;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 20px;
+      border-left: 2px solid #00eaff;
+    }
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+    .timeline-entry h4 {
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    .timeline-entry p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ashish Gupta</h1>
+    <p>Final Year B.Tech Civil Engg | E-Cell Lead | Data + Dev + Debate</p>
+    <p><a href="https://www.linkedin.com/in/ashish-gupta-19a186256" target="_blank">LinkedIn</a></p>
+    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+  </header>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Samudaay Connect (GroMoX Hackathon)</h3>
+      <p>Developed a platform to connect Gram Panchayats with a community-driven leaderboard, sharing solutions, local competitions, and regional insights to improve GP performance.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Groundwater Research & Publication</h3>
+      <p>Worked on groundwater modeling, analysis and published paper addressing rural water scarcity solutions using remote sensing & GIS tools.</p>
+      <a href="#">Read Paper</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>DSA</div><div>Java</div><div>Python</div><div>Python Turtle</div><div>NumPy</div>
+      <div>Pandas</div><div>Statistics</div><div>Matplotlib</div><div>Seaborn</div><div>Plotly</div>
+      <div>Bokeh</div><div>Advanced Excel</div><div>Power BI</div><div>Tableau</div><div>ML (Supervised, Unsupervised, etc.)</div>
+      <div>SQL</div><div>Kaggle</div><div>Git & GitHub</div><div>AI Agent Dev</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Professional Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-entry">
+        <h4>2024 – Present: Marketing Lead, E-Cell NIT Bhopal</h4>
+        <p>Led startup collaborations, hosted E-Summit, and raised INR 18 Cr+ in startup funding showcases.</p>
+      </div>
+      <div class="timeline-entry">
+        <h4>2024: Business Development Intern, ScalerBee</h4>
+        <p>Initiated B2B collaborations including BITS Pilani and learned investment strategy execution.</p>
+      </div>
+      <div class="timeline-entry">
+        <h4>2024: Engineering Intern, PWD</h4>
+        <p>Worked on advanced machinery in road/bridge construction and modern surveying techniques.</p>
+      </div>
+      <div class="timeline-entry">
+        <h4>2023 – 2024: Event Manager, Aaroha NGO</h4>
+        <p>Organized events for underprivileged children including fundraising campaigns and mentorship.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Ashish Gupta✨
+  </footer>
+</body>
+</html>
