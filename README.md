@@ -4,9 +4,7 @@ Welcome to my personal portfolio website!
 This site is a dynamic showcase of who I am, what I do, and what I’ve built — combining elegant UI, smooth animations, and scroll-based interactions to present my work and personality in the most engaging way possible.
 
 ## 🌐 Live Website
-
-[👉 Visit Portfolio](https://your-live-link.com)  
-*(Replace with your actual hosted link)*
+https://ashish4133r.github.io/ashish-portfolio/
 
 ---
 
